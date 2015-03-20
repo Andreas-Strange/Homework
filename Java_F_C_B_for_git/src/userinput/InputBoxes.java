@@ -1,6 +1,6 @@
 package userinput;
 
-import javax.swing.JEditorPane;
+
 import javax.swing.JOptionPane;
 public class InputBoxes {
 	public static void main(String[] args) {
