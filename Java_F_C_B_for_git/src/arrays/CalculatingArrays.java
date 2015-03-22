@@ -49,7 +49,7 @@ public class CalculatingArrays {
 		antalfald = 0;
 		for ( int i = 1; i < array.length; i++) {
 			
-			if(array[i-1] > array[i]){
+			if (array[i-1] > array[i]){
 				antalfald ++;
 			}
 		}
