@@ -14,7 +14,7 @@ public class StudentResults {
 		Exam_Grade = "Unknown";
 
 	}
-	
+
 	void writeFirstname(){
 		System.out.println("Write your firstname");
 	}
@@ -29,8 +29,8 @@ public class StudentResults {
 		Full_Name = aName;
 		return Full_Name;
 	}
-			
-	
+
+
 	String examName(String examCode){
 
 		if(examCode.equals("VP")){
@@ -39,7 +39,7 @@ public class StudentResults {
 		else if(examCode.equals("DB")){
 			Exam_Name = "Indledende Databaser";
 		}
-		else if(examCode.equals("Dk")){
+		else if(examCode.equals("DK")){
 			Exam_Name = "Datakommunikation";
 		}
 		else if(examCode.equals("NP")){
@@ -52,5 +52,17 @@ public class StudentResults {
 			Exam_Name = "No Exam Name";
 		}
 		return Exam_Name;	
+	}
+	String examScore(int ascore){
+		Exam_Score = ascore + " out of 50";
+		return Exam_Score;
+
+	}
+	 	String getGrade(int ascore){
+		int exam_grade = 0;
+		if (ascore >= 0 && ascore <= 10){
+			exam_grade = 2; 
+		}
+		return "Du fik karakteren " + exam_grade;
 	}
 }

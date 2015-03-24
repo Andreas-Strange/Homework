@@ -19,10 +19,13 @@ public class ExamDetails {
 		
 		String sccode = scanned.enterCode();
 		String eName = aStudent.examName(sccode);
+		String score = aStudent.examScore(30);
+		String grade = aStudent.getGrade(5);
 		
 		System.out.println(fName + " " + faName);
 		System.out.println(eName);
-		
+		System.out.println(score);
+		System.out.println(grade);
 	}
 
 }
